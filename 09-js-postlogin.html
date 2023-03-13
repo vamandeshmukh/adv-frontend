@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <p id="postLogin"></p>
+
+    <script>
+        console.log(window.location.href);
+
+        const user = new URL(location.href).searchParams.get('username');
+        const pass = new URL(location.href).searchParams.get('password');
+
+        console.log(user, pass);
+
+        if (user === 'Sonu' && pass === 'Sonu')
+            document.getElementById('postLogin').innerHTML = `Hi ${user}!`;
+        else
+            document.getElementById('postLogin').innerHTML = 'Invalid Credentials!';
+
+    </script>
+
+</body>
+
+</html>
+
+

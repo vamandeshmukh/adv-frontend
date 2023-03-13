@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <!-- https://www.w3schools.com/jsref/obj_mouseevent.asp -->
+    <!-- take user inputted name and display it on click  -->
+
+    <!-- more learning  -->
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events -->
+
+    <h1>User Input</h1>
+    <p>Enter your name, click and display</p>
+
+    <input type="text" id="username" value="" placeholder="Please enter your name">
+    <br />
+    <br />
+    <input type="button" value="Display" onclick="showName()">
+    <br />
+    <p id="displayname"></p>
+
+
+    <script>
+        const showName = () => {
+            document.getElementById('displayname').innerHTML =
+
+                document.getElementById('username').value;
+
+            document.getElementById('username').value = '';
+        };
+
+    </script>
+
+</body>
+
+</html>

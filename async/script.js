@@ -1,0 +1,2 @@
+console.log('async JS');
+
