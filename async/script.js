@@ -34,17 +34,17 @@ console.log('Start');
 // solution 2 - using Promise  
 // ============================
 
-const getFun = () => {
-    let isDataAvailable = true; // false 
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (isDataAvailable)
-                resolve({ text: 'Hello world!' });
-            else
-                reject({ message: 'Something is wrong!' });
-        }, 2000);
-    });
-};
+// const getFun = () => {
+//     let isDataAvailable = true; // false 
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (isDataAvailable)
+//                 resolve({ text: 'Hello world!' });
+//             else
+//                 reject({ message: 'Something is wrong!' });
+//         }, 2000);
+//     });
+// };
 
 
 
@@ -92,31 +92,57 @@ const getFun = () => {
 //     );
 
 
-// create a function "gstCalc" using Promise to calculate invoice amount -
-// input - work cost e.g. 100
-// output - final invoice amount = cost + 9% sgst + 9% cgst - 10% tds - 108 
-// input should be a postive number.
 
 
-const gstCalc = (cost) => {
+// ================================
+// solution 3 - using async / await   
+// ================================
+
+const getFun = () => {
+    let isDataAvailable = true; // false 
     return new Promise((resolve, reject) => {
-        if (cost > 0) {
-            let sgst = cost * 0.09;
-            console.log(sgst);
-            let cgst = cost * 0.09;
-            console.log(cgst);
-            let tds = cost * 0.10;
-            console.log(tds);
-            let finalAmount = cost + cgst + sgst - tds;
-            resolve({ amount: finalAmount });
-        }
-        else {
-            reject({ message: 'Something is wrong!' });
-        }
+        setTimeout(() => {
+            if (isDataAvailable)
+                resolve({ text: 'Hello world!' });
+            else
+                reject({ message: 'Something is wrong!' });
+        }, 2000);
     });
 };
 
-gstCalc(100).then(res => console.log(res.amount), e => console.log(e.message));
+const fun = async () => {
+    const funMessage = await getFun();
+    console.log(funMessage.text);
+};
+
+fun();
+
+
+// create a function "gstCalc" using Promise to calculate invoice amount -
+// input - work cost e.g. 100
+// output - final invoice amount = cost + 9% sgst + 9% cgst - 10% tds - 108
+// input should be a postive number.
+
+
+// const gstCalc = (cost) => {
+//     return new Promise((resolve, reject) => {
+//         if (cost > 0) {
+//             let sgst = cost * 0.09;
+//             console.log(sgst);
+//             let cgst = cost * 0.09;
+//             console.log(cgst);
+//             let tds = cost * 0.10;
+//             console.log(tds);
+//             let finalAmount = cost + cgst + sgst - tds;
+//             resolve({ amount: finalAmount });
+//         }
+//         else {
+//             reject({ message: 'Something is wrong!' });
+//         }
+//     });
+// };
+
+// gstCalc(100).then(res => console.log(res.amount), e => console.log(e.message));
 
 
 
