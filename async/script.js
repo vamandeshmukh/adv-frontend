@@ -11,13 +11,13 @@ console.log('Start');
 
 
 
-const getFun = (arg) => {
-    setTimeout(() => {
-        arg({ text: 'Hello wold!' }); // not avaiable 
-    }, 2000);
-};
+// const getFun = (arg) => {
+//     setTimeout(() => {
+//         arg({ text: 'Hello wold!' }); // not avaiable 
+//     }, 2000);
+// };
 
-getFun((abc) => { console.log(abc.text); });
+// getFun((abc) => { console.log(abc.text); });
 
 
 
