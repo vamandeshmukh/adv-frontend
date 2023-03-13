@@ -35,7 +35,6 @@ console.log('Start');
 // ============================
 
 const getFun = () => {
-
     let isDataAvailable = true; // false 
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -47,8 +46,20 @@ const getFun = () => {
     });
 };
 
-// syntax 
+
+
+// syntax 1 
 // functionCall().then(() => { }).catch(() => { });
+// syntax 2 
+// functionCall().then(() => { }, () => { });
+
+// getFun()
+//     .then((response) => {
+//         console.log(response.text);
+//     })
+//     .catch((error) => {
+//         console.log(error.message);
+//     });
 
 getFun()
     .then((response) => {
@@ -57,8 +68,3 @@ getFun()
     .catch((error) => {
         console.log(error.message);
     });
-
-
-
-
-
