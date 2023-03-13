@@ -34,13 +34,19 @@ console.log('Start');
 // solution 2 - using Promise  
 // ============================
 
+const getFun = () => {
 
-const getFun = (arg) => {
-    setTimeout(() => {
-        return { text: 'Hello wold!' };
-    }, 2000);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({ text: 'Hello world!' });
+        }, 2000);
+    });
 };
 
+getFun()
+    .then((response) => {
+        console.log(response.text);
+    });
 
 
 
