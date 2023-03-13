@@ -110,10 +110,21 @@ const getFun = () => {
     });
 };
 
+// const fun = async () => {
+//     const funMessage = await getFun();
+//     console.log(funMessage.text);
+// };
+
 const fun = async () => {
-    const funMessage = await getFun();
-    console.log(funMessage.text);
+    try {
+        const funMessage = await getFun();
+        console.log(funMessage.text);
+    }
+    catch (error) {
+        console.log(error.message);
+    }
 };
+
 
 fun();
 
