@@ -53,6 +53,8 @@ const getFun = () => {
 // syntax 2 
 // functionCall().then(() => { }, () => { });
 
+// using syntax 1 
+
 // getFun()
 //     .then((response) => {
 //         console.log(response.text);
@@ -61,10 +63,32 @@ const getFun = () => {
 //         console.log(error.message);
 //     });
 
+
+// using syntax 2 
+
+// getFun()
+//     .then(
+//         (response) => {
+//             console.log(response.text);
+//         },
+//         (error) => {
+//             console.log(error.message);
+//         });
+
+// using shortcut syntax variations  
+
+// getFun()
+//     .then(
+//         response => console.log(response.text)
+//         , 
+//         errror => console.log(error.message)
+//         );
+
 getFun()
-    .then((response) => {
-        console.log(response.text);
-    })
-    .catch((error) => {
-        console.log(error.message);
-    });
+    .then(
+        res => console.log(res.text)
+        ,
+        e => console.log(e.message)
+    );
+
+
