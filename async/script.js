@@ -1,16 +1,34 @@
 console.log('Start');
 
-const getFun = () => {
+// const getFun = () => {
+//     setTimeout(() => {
+//         return { text: 'Hello wold!' };
+//     }, 2000);
+// };
+
+// const fun = getFun();
+// console.log(fun.text);
+
+
+
+const getFun = (arg) => {
     setTimeout(() => {
-        return { text: 'Hello wold!' };
+        arg({ text: 'Hello wold!' }); // not avaiable 
     }, 2000);
 };
-const fun = getFun();
-console.log(fun.text);
+
+getFun((abc) => { console.log(abc.text); });
 
 
 
 // start  hello world
+
+// Promise 
+    
+    // keep 
+
+    // break 
+
 
 
 
