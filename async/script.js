@@ -27,15 +27,15 @@ console.log('Start');
 
 
 // Promise 
-    // keep 
-    // break 
+// keep 
+// break 
 
 // ============================
 // solution 2 - using Promise  
 // ============================
 
 
-const getFun = () => {
+const getFun = (arg) => {
     setTimeout(() => {
         return { text: 'Hello wold!' };
     }, 2000);
