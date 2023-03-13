@@ -84,12 +84,12 @@ const getFun = () => {
 //         errror => console.log(error.message)
 //         );
 
-getFun()
-    .then(
-        res => console.log(res.text)
-        ,
-        e => console.log(e.message)
-    );
+// getFun()
+//     .then(
+//         res => console.log(res.text)
+//         ,
+//         e => console.log(e.message)
+//     );
 
 
 // create a function "gstCalc" using Promise to calculate invoice amount -
@@ -98,11 +98,25 @@ getFun()
 // input should be a postive number.
 
 
-const gstCalc = (amount) => {
-    return new Promise(() => { });
+const gstCalc = (cost) => {
+    return new Promise((resolve, reject) => {
+        if (cost > 0) {
+            let sgst = cost * 0.09;
+            console.log(sgst);
+            let cgst = cost * 0.09;
+            console.log(cgst);
+            let tds = cost * 0.10;
+            console.log(tds);
+            let finalAmount = cost + cgst + sgst - tds;
+            resolve({ amount: finalAmount });
+        }
+        else {
+            reject({ message: 'Something is wrong!' });
+        }
+    });
 };
 
-gstCalc();
+gstCalc(100).then(res => console.log(res.amount), e => console.log(e.message));
 
 
 
