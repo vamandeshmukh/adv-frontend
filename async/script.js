@@ -1,5 +1,9 @@
 console.log('Start');
 
+// ===================
+// problem of async js 
+// ===================
+
 // const getFun = () => {
 //     setTimeout(() => {
 //         return { text: 'Hello wold!' };
@@ -9,7 +13,9 @@ console.log('Start');
 // const fun = getFun();
 // console.log(fun.text);
 
-
+// ============================
+// solution 1 - using callback 
+// ============================
 
 // const getFun = (arg) => {
 //     setTimeout(() => {
@@ -20,16 +26,20 @@ console.log('Start');
 // getFun((abc) => { console.log(abc.text); });
 
 
-
-// start  hello world
-
 // Promise 
-    
     // keep 
-
     // break 
 
+// ============================
+// solution 2 - using Promise  
+// ============================
 
+
+const getFun = () => {
+    setTimeout(() => {
+        return { text: 'Hello wold!' };
+    }, 2000);
+};
 
 
 
