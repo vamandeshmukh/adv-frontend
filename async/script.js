@@ -92,3 +92,19 @@ getFun()
     );
 
 
+// create a function "gstCalc" using Promise to calculate invoice amount -
+// input - work cost e.g. 100
+// output - final invoice amount = cost + 9% sgst + 9% cgst - 10% tds - 108 
+// input should be a postive number.
+
+
+const gstCalc = (amount) => {
+    return new Promise(() => { });
+};
+
+gstCalc();
+
+
+
+
+
