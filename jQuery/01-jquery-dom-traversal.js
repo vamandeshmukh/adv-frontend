@@ -1,8 +1,11 @@
 console.log('DOM Traversal with jQuery');
 
 $(document).ready(function () {
-    const parents = $('#phoneList').parents();
-    console.log(parents);
+    $('#phoneList').click(function () {
+        // $(this).parents().css('color', 'blue');
+        // $(this).parent().css('color', 'blue');
+        $(this).parentsUntil('#productList').css('color', 'blue');
+    });
 });
 
 
