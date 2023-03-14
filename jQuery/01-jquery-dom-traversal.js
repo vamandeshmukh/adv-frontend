@@ -10,24 +10,25 @@ console.log('DOM Traversal with jQuery');
 
 
 
-let showHide = true;
-
-$(document).ready(function () {
-    $('#phones').click(function () {
-        if (showHide)
-            $(this).next().hide();
-        else
-            $(this).next().show();
-        showHide = !showHide;
-    });
-});
-
+// let showHide = true;
 
 // $(document).ready(function () {
 //     $('#phones').click(function () {
-//         $(this).next().toggle(250);
+//         if (showHide)
+//             $(this).next().hide();
+//         else
+//             $(this).next().show();
+//         showHide = !showHide;
 //     });
 // });
+
+
+
+$(document).ready(function () {
+    $('#phones').click(function () {
+        $(this).next().toggle(250);
+    });
+});
 
 
 
