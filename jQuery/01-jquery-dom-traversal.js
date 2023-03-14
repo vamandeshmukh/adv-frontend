@@ -1,9 +1,8 @@
 console.log('DOM Traversal with jQuery');
 
 $(document).ready(function () {
-    $("#").someEvent(function () {
-        $(this).someAction();
-    });
+    const parents = $('#phoneList').parents();
+    console.log(parents);
 });
 
 
