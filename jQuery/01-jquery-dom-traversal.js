@@ -30,5 +30,18 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('#pcs').click(function () {
+        $(this).next().children().toggle(250);
+    });
+});
 
+// Assignment: 
+// Complete learning with coding and peer-dicsussion of - 
+
+// https://www.w3schools.com/jquery/jquery_traversing.asp
+// https://www.w3schools.com/jquery/jquery_traversing_ancestors.asp
+// https://www.w3schools.com/jquery/jquery_traversing_descendants.asp
+// https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
+// https://www.w3schools.com/jquery/jquery_traversing_filtering.asp
 
