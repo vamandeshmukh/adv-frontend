@@ -101,6 +101,8 @@ console.log('Start');
 // solution 3 - using async / await   
 // ================================
 
+// getEmpById(101):
+
 const getFun = () => {
     let isDataAvailable = true; // false 
     return new Promise((resolve, reject) => {
@@ -127,7 +129,6 @@ const fun = async () => {
         console.log(error.message);
     }
 };
-
 
 fun();
 
