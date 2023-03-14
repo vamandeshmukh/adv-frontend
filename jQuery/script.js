@@ -21,14 +21,22 @@ $(document).ready(function () {
 });
 
 
+// $(document).ready(function () {
+//     $("#p1").someEvent(function () {
+//         $(this).someAction();
+//     });
+// });
+
+
+
+
+
+
 $(document).ready(function () {
-    $("#p1").someEvent(function () {
-        $(this).someAction();
+    $("#p1").dblclick(function () {
+        $(this).remove();
     });
 });
-
-
-
 
 
 
