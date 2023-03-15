@@ -1,3 +1,5 @@
+// https://www.w3schools.com/js/js_ajax_http.asp
+
 console.log('ajax demos');
 
 
@@ -11,9 +13,7 @@ const getData = () => {
         console.log(response); 
     };
 
-    http.open('GET', 'https://jsonplaceholder.typicode.com/users/2');
+    http.open('GET', 'https://jsonplaceholder.typicode.com/users/4');
     http.send();
-
-
 
 };
