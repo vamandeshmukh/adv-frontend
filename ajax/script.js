@@ -3,9 +3,12 @@ console.log('jQuery AJAX Demos');
 
 $(document).ready(function () {
     $("button").click(function () {
-        $.get('https://jsonplaceholder.typicode.com/users/2', function (data, status) {
+        let uid = $("#userId").val();
+        console.log(uid);
+        $.get(`https://jsonplaceholder.typicode.com/users/${uid}`, function (data, status) {
             console.log(data);
         });
+
     });
 })
 
