@@ -1,14 +1,15 @@
 console.log('jQuery AJAX Demos');
 
-
 $(document).ready(function () {
     $("button").click(function () {
         let uid = $("#userId").val();
         console.log(uid);
-        $.get(`https://jsonplaceholder.typicode.com/users/${uid}`, function (data, status) {
+        $.get(`https://jsonplaceholder.typicode.com/users/${uid}`, function (data, status, abc) {
             $("#username").text(data.name);
             $("#useremail").text(data.email);
             console.log(data);
+            console.log(abc.status);
+            console.log(status);
         });
     });
 })
