@@ -10,7 +10,11 @@ $(document).ready(function () {
             console.log(data);
             console.log(abc.status);
             console.log(status);
-        });
+        })
+            .fail(function (error) {
+                $("#username").text('data not found!');
+                console.log(error);
+            });
     });
 })
 
