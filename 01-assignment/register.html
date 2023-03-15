@@ -3,13 +3,24 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src='main.js'></script>
+    <script src='./script.js'></script>
 </head>
 <div>
     <h1>Register</h1>
+    <div>
+        <form id="registerForm">
+            <input type="text" id="username" value="" placeholder="Please enter username" required>
+            <input type="password" id="password" value="" placeholder="Please enter password" required>
+            <input type="password" id="confirmpassword" value="" placeholder="Please confirm password" required>
+            <input type="button" id="submitRegister" value="Register">
+        </form>
+    </div>
 
     <div>
-        <!-- your code here  -->
+        <p id="userdata"></p>
+    </div>
+    <div>
+        <p>Already registered? <a href="./login.html">Login</a> </p>
     </div>
 
 </div>
