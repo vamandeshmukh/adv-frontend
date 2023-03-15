@@ -1,3 +1,4 @@
+
 console.log('DOM Traversal with jQuery');
 
 // $(document).ready(function () {
@@ -7,8 +8,6 @@ console.log('DOM Traversal with jQuery');
 //         // $(this).parentsUntil($('#productList')).css('color', 'blue');
 //     });
 // });
-
-
 
 // let showHide = true;
 
@@ -44,4 +43,5 @@ $(document).ready(function () {
 // https://www.w3schools.com/jquery/jquery_traversing_descendants.asp
 // https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
 // https://www.w3schools.com/jquery/jquery_traversing_filtering.asp
+
 
