@@ -52,6 +52,9 @@ $(document).ready(function () {
                 $("#userdata").text('Something went wrong!');
             });
         $('#loginForm').trigger("reset");
+        setTimeout(() => {
+            $(location).attr('href', './welcome.html');
+        }, 3000)
     });
 });
 
@@ -77,7 +80,9 @@ $(document).ready(function () {
             $("#userdata").text('password and confirm password do not match!');
         }
         $('#registerForm').trigger("reset");
+        setTimeout(() => {
+            $(location).attr('href', './login.html');
+        }, 3000)
     });
-
 });
 
