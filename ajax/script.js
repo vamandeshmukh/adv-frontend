@@ -6,9 +6,10 @@ $(document).ready(function () {
         let uid = $("#userId").val();
         console.log(uid);
         $.get(`https://jsonplaceholder.typicode.com/users/${uid}`, function (data, status) {
+            $("#username").text(data.name);
+            $("#useremail").text(data.email);
             console.log(data);
         });
-
     });
 })
 
