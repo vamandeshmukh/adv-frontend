@@ -12,21 +12,6 @@ use this folder as template.
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const url = 'https://jsonplaceholder.typicode.com/users/';
 
 // login
