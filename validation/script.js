@@ -2,8 +2,9 @@ const url = 'https://jsonplaceholder.typicode.com/users/';
 
 // login
 $(document).ready(function () {
-    $("#submitLogin").click(function () {
-        userData = { username: $('#username').val(), password: $('#password').val() }
+    $("#loginForm").submit(function () {
+        userData = { username: $('#username').val(), password: $('#password').val() };
+        console.log(userData);
         let loginStatus = false;
         let loggedInUser = '';
         $.get(url, function (data) {
@@ -25,3 +26,6 @@ $(document).ready(function () {
         $('#loginForm').trigger("reset");
     });
 });
+
+
+
