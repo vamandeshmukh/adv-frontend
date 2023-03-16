@@ -4,6 +4,7 @@ const url = 'https://jsonplaceholder.typicode.com/users/';
 $(document).ready(function () {
     $("#loginForm").submit(function () {
         console.log('submitted');
+        $("#userdata").text($("#username").val());
         $('#loginForm').trigger("reset");
     });
 });
