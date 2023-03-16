@@ -1,0 +1,32 @@
+<!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src='./script.js'></script>
+</head>
+<div>
+    <h1>RegEx</h1>
+    <div>
+        <form id="loginForm" onsubmit="return false">
+            <input type="text" id="username" value="" placeholder="Please enter username" minlength="4" maxlength="10"
+                required />
+            <br />
+            <input type="submit" id="submitLogin" value="Login" />
+        </form>
+    </div>
+
+    <div>
+        <p id="userdata"></p>
+    </div>
+
+</div>
+
+<body>
+
+</body>
+
+</html>
