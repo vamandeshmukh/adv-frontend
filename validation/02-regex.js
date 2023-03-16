@@ -1,8 +1,16 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet
 
 // JavaScript RegEx 
 
-const pattern = /a/;
-const result = pattern.test('aa');
+// const pattern = /^a$/;
+// const pattern = /^[a-zA-Z0-9@#]{2}$/;
+// const pattern = /^[6-9]{1}[0-9]{9}$/;
+const pattern = /^[6-9]{1}[\d]{9}$/;
+
+const inputValue = '9870986543';
+
+const result = pattern.test(inputValue);
+
 console.log(result);
 
 
