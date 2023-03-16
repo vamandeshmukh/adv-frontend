@@ -13,10 +13,13 @@
     <p>String handling, Regex, Custom functions</p>
     <div>
         <form id="loginForm" onsubmit="return false">
-            <input type="text" id="username" value="" placeholder="Please enter username" minlength="4" maxlength="10"
+            <input type="text" id="username" value="" placeholder="Please enter username" 
+            minlength="4" maxlength="10"
                 required />
             <br />
-            <input type="password" id="password" value="" placeholder="Please enter password" />
+            <input type="password" id="password" value="" placeholder="Please enter password" 
+            minlength="4"
+                maxlength="10" />
             <br />
             <input type="submit" id="submitLogin" value="Login" />
         </form>
