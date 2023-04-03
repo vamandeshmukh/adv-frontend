@@ -1,14 +1,11 @@
 // run as - 
 // tsc 01-ts-intro.ts 
 // node 01-ts-intro.js
-// // JS function 
-// const addNums = (a, b) => {
-//     return a + b;
-// };
-// console.log(addNums(10, 20));
-// TS function 
-var addNums = function (a, b) {
-    return a + b;
+;
+var greet = function (user) {
+    console.log('Hello ' + user.name);
 };
-console.log(addNums(10, 20));
-// console.log(addNums('abc', 'def')); // error 
+greet({ name: 'Vaman', age: 21 }); // no error  
+var u1 = { name: 'Sonu', age: 21 };
+greet(u1); // no error 
+// greet('Vaman'); // error
