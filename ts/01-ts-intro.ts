@@ -30,7 +30,7 @@ interface User {
     age: number
 };
 
-const greet = (user: User) => {
+const greet = (user: User): void => {
     console.log('Hello ' + user.name);
 }
 
