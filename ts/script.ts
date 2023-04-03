@@ -1,3 +1,6 @@
+// run as - 
+// tsc script.ts
+// node script.js
 
 // console.log('TypeScript');
 
@@ -11,6 +14,9 @@
 let myMarks: number = 100; // typesafe 
 console.log(myMarks);
 
-myMarks = 'abc'; // error 
+// myMarks = 'abc'; // error 
+myMarks = 98; // error 
 console.log(myMarks);
+
+
 
